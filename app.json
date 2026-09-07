@@ -1,5 +1,16 @@
 {
-  "plugins": [
-    "expo-sqlite"
-  ]
+  "expo": {
+    "name": "Registro Financeiro",
+    "slug": "registro-financeiro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.jvra.registrofinanceiro",
+      "versionCode": 1
+    },
+    "plugins": [
+      "expo-sqlite"
+    ]
+  }
 }

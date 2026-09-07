@@ -21,45 +21,33 @@ export function initDB() {
       date DATETIME DEFAULT CURRENT_TIMESTAMP,
       FOREIGN KEY (goal_id) REFERENCES goals (id) ON DELETE CASCADE
     );
+
+    CREATE INDEX IF NOT EXISTS transactions_goal_date_idx
+      ON transactions (goal_id, date, id);
   `);
 }
 
 export function createGoal(title, targetAmount, period = 'monthly') {
   const result = db.runSync(
     'INSERT INTO goals (title, target_amount, period) VALUES (?, ?, ?);',
-    [title, targetAmount, period]
+    [title, targetAmount, period],
   );
-
   return result.lastInsertRowId;
 }
 
 export function updateGoal(goalId, targetAmount) {
-  db.runSync(
-    'UPDATE goals SET target_amount = ? WHERE id = ?;',
-    [targetAmount, goalId]
-  );
+  db.runSync('UPDATE goals SET target_amount = ? WHERE id = ?;', [targetAmount, goalId]);
 }
 
 export function addTransaction(goalId, amount, onGoalReached) {
-  db.runSync(
-    'INSERT INTO transactions (goal_id, amount) VALUES (?, ?);',
-    [goalId, amount]
-  );
-
-  const goal = db.getFirstSync(
-    'SELECT target_amount, title FROM goals WHERE id = ?;',
-    [goalId]
-  );
+  db.runSync('INSERT INTO transactions (goal_id, amount) VALUES (?, ?);', [goalId, amount]);
+  const goal = db.getFirstSync('SELECT target_amount, title FROM goals WHERE id = ?;', [goalId]);
   const totalResult = db.getFirstSync(
     'SELECT COALESCE(SUM(amount), 0) AS total FROM transactions WHERE goal_id = ?;',
-    [goalId]
+    [goalId],
   );
   const total = totalResult?.total ?? 0;
-
-  if (goal && total >= goal.target_amount) {
-    onGoalReached?.(goal.title, total, goal.target_amount);
-  }
-
+  if (goal && total >= goal.target_amount) onGoalReached?.(goal.title, total, goal.target_amount);
   return { total, target: goal?.target_amount ?? 0 };
 }
 
@@ -71,7 +59,7 @@ export function getGoals() {
     FROM goals
     LEFT JOIN transactions ON transactions.goal_id = goals.id
     GROUP BY goals.id
-    ORDER BY goals.created_at DESC;
+    ORDER BY goals.created_at DESC, goals.id DESC;
   `);
 }
 
@@ -92,6 +80,6 @@ export function getTransactions(goalId) {
       WHERE goal_id = ?
       ORDER BY date DESC, id DESC;
     `,
-    [goalId]
+    [goalId],
   );
 }

@@ -5,6 +5,11 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/finance-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f1f5f9"
+    },
     "android": {
       "package": "com.jvra.registrofinanceiro",
       "versionCode": 1

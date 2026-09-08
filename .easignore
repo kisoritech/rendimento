@@ -1,0 +1,7 @@
+node_modules/
+.expo/
+dist/
+.git/
+.github/
+*.log
+eas-build.json

@@ -168,3 +168,36 @@
 {"_e":"metro:client_log","_t":1788822953745,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
 {"_e":"metro:bundling:started","_t":1788823020921,"id":"s","platform":"web","environment":null,"entry":"App.js"}
 {"_e":"metro:bundling:started","_t":1788823020940,"id":"t","platform":"web","environment":null,"entry":"src\\database\\index.js"}
+{"_e":"root:init","_t":1788827962850,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788827962851,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788827962852,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788827969998,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788827970297,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1788827971071,"plugins":[{"packageName":"expo-sqlite","bannerTitle":"expo-sqlite","cliBanner":false,"webpageEndpoint":"/_expo/plugins/expo-sqlite"}]}
+{"_e":"metro:instantiate","_t":1788827974500,"atlas":false,"workers":8,"host":"::","port":8082}
+{"_e":"metro:bundling:started","_t":1788827975214,"id":"1","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1788827975214,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788827975218,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788827975318,"id":"1","progress":0.4207450693937181,"total":74,"current":48}
+{"_e":"metro:bundling:progress","_t":1788827975422,"id":"1","progress":0.999,"total":183,"current":183}
+{"_e":"metro:bundling:done","_t":1788827975454,"id":"1","total":183,"ms":239.9555}
+{"_e":"metro:client_log","_t":1788827975555,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1788827975556,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"root:init","_t":1788828716401,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788828716402,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788828716404,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788828718750,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788828719183,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1788828719413,"plugins":[{"packageName":"expo-sqlite","bannerTitle":"expo-sqlite","cliBanner":false,"webpageEndpoint":"/_expo/plugins/expo-sqlite"}]}
+{"_e":"metro:instantiate","_t":1788828722526,"atlas":false,"workers":8,"host":"::","port":8082}
+{"_e":"metro:bundling:started","_t":1788828723046,"id":"1","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1788828723047,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788828723049,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788828723227,"id":"1","progress":0.9240790842872009,"total":155,"current":149}
+{"_e":"metro:bundling:done","_t":1788828723274,"id":"1","total":155,"ms":227.5917}
+{"_e":"metro:client_log","_t":1788828723368,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1788828723369,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:bundling:started","_t":1788828729975,"id":"3","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1788828729975,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1788828729985,"id":"3","total":1,"ms":9.5739}
+{"_e":"metro:client_log","_t":1788828730077,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}

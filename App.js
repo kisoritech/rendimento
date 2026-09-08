@@ -282,7 +282,7 @@ function HistoryTable({ history }) {
 const styles = StyleSheet.create({
   safeArea: { flex: 1, backgroundColor: '#f1f5f9' },
   loading: { alignItems: 'center', flex: 1, justifyContent: 'center' },
-  container: { maxWidth: 1100, paddingBottom: 32, paddingHorizontal: 16, paddingTop: 14, width: '100%', alignSelf: 'center' },
+  container: { maxWidth: 1100, paddingBottom: 32, paddingHorizontal: 16, paddingTop: 30, width: '100%', alignSelf: 'center' },
   header: { alignItems: 'flex-start', flexDirection: 'row', justifyContent: 'space-between', marginBottom: 12, gap: 10 },
   headerCopy: { flex: 1 },
   appEyebrow: { color: '#2563eb', fontSize: 10, fontWeight: '800', letterSpacing: 1.3, marginBottom: 4 },

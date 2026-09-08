@@ -2,7 +2,7 @@
   "expo": {
     "name": "Registro Financeiro",
     "slug": "registro-financeiro",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "icon": "./assets/finance-logo.png",
@@ -13,7 +13,7 @@
     },
     "android": {
       "package": "com.jvra.registrofinanceiro",
-      "versionCode": 3,
+      "versionCode": 4,
       "adaptiveIcon": {
         "foregroundImage": "./assets/finance-logo.png",
         "backgroundColor": "#f1f5f9"
